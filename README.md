@@ -2,4 +2,6 @@
 
 ### Projeto em andamento
 
+[Download do Dataset](https://www.kaggle.com/msambare/fer2013)
+
 Nesse Projeto vamos criar uma API para reconhecer expressões do usuário pela WebCam e converter essa expressão em um Emoji
