@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
-class processamento_imagens_categorias():
+class ProcessamentoImagensCategorias():
     '''
     Classe para processar imagens organizadas em pastas separas por categórias. 
     '''
