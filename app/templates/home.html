@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="titulo">
+  <head>
+    <h1><strong><b>Detector de emoções pela WebCam</b></strong></h1>
+    <p style="text-align: center;">&nbsp;</p>
+    <p style="text-align: center;">&nbsp;</p>
+    <h1 style="text-align: center;"><span style="color: #0000ff;"></span></h1>
+  </head>
+</div>
+  <body>
+    <h1 style="text-align: center;"><button class= "btn btn-primary btn-block btn-large"><a href="{{url_for('detecta')}}" method='GET' >Iniciar</button></a></h1>
+  </body>
+
+<h3 style="text-align: center;">{{imagem}}</h3>
+
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+
+
+{% endblock %}

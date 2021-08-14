@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+  h1 {
+    font-family: Lobster, monospace;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  .silver-background {
+    background-color: silver;
+    padding: 20px;
+  }
+</style>
+
+<title>{{title}}</title>
+<html>
+	<div class = 'silver-background'>
+			<a href="{{url_for('classifi')}}">{{Classificação}}</a>
+
+			<a href="{{url_for('home')}}">Sistema de Recomendação</a>
+
+			<a href="https://github.com/luandiego01/Projeto2-Sistema_de_recomendacao_e_classificacao_de_textos" download><p>Readme</p></a>
+			<hr>
+	</div>
+		{% block content %}{% endblock %}
+</html>

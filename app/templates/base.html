@@ -1,0 +1,91 @@
+<!--- #FFCCCC);--->
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  body {
+    background: #CCFFFF
+  }
+  .red-text {
+    color: red;
+  }
+  h1 {
+    font-family: Lobster, monospace;
+    font-size: 30px;
+    text-align: center;
+  }
+  h4 {
+    font-family: monospace;
+  }
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 0px 0px;
+  }
+  nav li {
+    display: inline;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 9px;
+  }
+  nav li:hover{
+    background-color: #FFCCCC;
+  }
+  .titulo {
+    padding: 10px;
+    width: 100%;
+  }
+  #navbar{
+  	position: fixed;
+  	top:  0;
+  	width: 100%;
+    background-color: skyblue;
+    padding-top: 2px;
+    padding-bottom: 9px;
+  }
+  #shadow{
+  	box-shadow: 10px 10px 10px 10px silver;
+  }
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 100%;
+  }
+  button {
+    border-radius: 5px;
+    padding: 4px 7px 4px 7px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes background-color {
+    100% {
+      background-color: silver;
+    }
+  }
+</style>
+
+<title>{{title}}</title>
+<html>
+	<div>
+	<nav id="navbar">
+		<ul>
+			<li><a href="{{url_for('home')}}">Home</a></li>
+			<li><a href="https://github.com/luandiego01/Projeto2-Sistema_de_recomendacao_e_classificacao_de_textos">Readme</a></li>
+		</ul>
+	</nav>
+		{% block content %}{% endblock %}
+	</div>
+</html>
