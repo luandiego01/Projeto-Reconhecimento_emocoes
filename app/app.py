@@ -18,7 +18,7 @@ def home():
 @app.route('/detecta', methods = ['GET'])
 
 def detecta():
-    
+
     dict_emocoes = {
     0: "Zangado", 
     1: "Nojo", 
@@ -29,7 +29,8 @@ def detecta():
     6: "Surpresa"
 }
     cap = cv2.VideoCapture(0)
-    while True:
+    a = True
+    while a == True:
         ret, frame = cap.read()
         bounding_box = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -44,7 +45,7 @@ def detecta():
             cv2.imshow('Video', frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+            a = False
 
     cap.release()
 
