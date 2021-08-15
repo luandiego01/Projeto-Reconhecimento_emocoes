@@ -1,15 +1,31 @@
-# Projeto Reconhecimento de expressões pela captura da WebCam :camera:
+# Projeto Reconhecimento de emoções pela captura da WebCam :camera:
 
-### Projeto em andamento
+### Projeto concluído. Para testar o API, baixe a pasta app do repositório e execute o comando `python app.py` do pront de comando no diretório do app
 
 [Download do Dataset](https://www.kaggle.com/msambare/fer2013)
 
-Nesse Projeto vamos criar uma API para reconhecer expressões do usuário pela WebCam
+Nesse projeto, trabalhamos com detecção de emoções, onde criamos modelos de machine learning que conseguem detectar entre sete emoções diferentes, são elas:
 
-Etapas concluídas:
+- 0: Zangado
+ - 1: Nojo 
+ - 2: Medo 
+ - 3: Feliz
+ - 4: Natural
+ - 5: Triste
+ - 6: Surpresa
 
-- Explicação e criação de uma classe para processamento de imagens que estão organizadas por pastas divididas em categorias.
-- Criação da biblioteca1.py com essa classe criada, e onde irá as outras classes que usaremos no resto do projeto
-- Redes neurais treinadas.
-- Funções para detectar principal emoção e probabilidades de cada uma delas criada
-- Primeira versão do API criado
+No notebook todo o processo feito para tal é explicado com todos os detalhes, desde o processamento das fotos, passando pela criação e treinamento das redes neurais, finalizando com a criação das funções preditoras e explicação de como podemos fazer o API para detectar essas emoções usando nossa própria WebCam.
+
+Além do notebook, temos um API pronto para ser testado localmente, executado-o, o algoritmo abre a sua WebCam e detecta todas as emoções, independente da quantidade de pessoas que estejam na imagem, em tempo real.
+
+Também temos a biblioteca1.py que ta com a  classe de processamento de imagens e duas funções de predição salvas, que podem nos ajudar em futuros projetos.
+
+## Ideias para continuidade.
+
+A primeira ideia para usarmos esse projeto, é em contato com uma equipe de desenvolvedores, colocar o API em um webservice para usuários testarem diretamente por um site.
+
+Além disso, também podemos criar um banco de dados, e o usuário teria a opção de abastecer esse banco de dados enviando uma foto com uma das emoções escolhidas, assim, no podemos depois retreinar o modelo, afim de obter uma melhor acurácia.
+
+Uma outra ideia seria criar também webservice um serviço de criação de avatar, onde o usuário criaria sem avatar e com o detector de emoções, o avatar viraria emojis para o usuário.
+
+Essas são apenas algumas das muitas ideias e possibilidades que podemos ter com esse projeto e API
