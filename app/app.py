@@ -1,5 +1,6 @@
 
 import cv2
+import pafy
 from tensorflow.keras.models import load_model
 import numpy as np
 from flask import Flask, request, url_for, redirect, render_template, jsonify, Response
@@ -21,7 +22,8 @@ dict_emocoes = {
 
 
 def frames1():
-    cap=cv2.VideoCapture(0)
+
+    cap = cv2.VideoCapture(0)
     a = True
     while a == True:
         ret, frame1 = cap.read()
@@ -49,7 +51,7 @@ def frames1():
             a = False
 
     cap.release()
-
+    cv2.destroyAllWindows()
 @app.route("/")
 def home():
      return render_template("home.html", title = "Detecção de emoções")

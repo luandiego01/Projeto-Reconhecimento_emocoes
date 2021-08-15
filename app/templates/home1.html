@@ -11,10 +11,13 @@
 </div>
 <h1 style="text-align: center;">Bem vindo ao detector de emoções! Aproveite e descubra todas as duas emoções!
   </h1>
-
 <div class='box-1'>
-      <img src="{{ url_for('detecta') }}">
+<form action="{{url_for('detecta')}}" method='POST'>
+  <h1 style="text-align: center;"><input type="text" , name ="x1" placeholder = "Digite o endereço do vídeo do youtube", style="width: 300px; height: 30px;" /></h1>
+  <h1 style="text-align: center;"><button type= "submit" class= "btn btn-primary btn-block btn-large">Iniciar</button></h1>
+</form>
 </div>
+
 
 
 
