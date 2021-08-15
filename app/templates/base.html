@@ -56,9 +56,15 @@
     justify-content: center;
   }
   #box-1 {
+    align-self: center;
     background-color: dodgerblue;
     width: 50%;
     height: 100%;
+  }
+  .box-1 {
+    text-align: center;
+    background-color: dodgerblue;
+    justify-content: center;
   }
   button {
     border-radius: 5px;
@@ -82,8 +88,7 @@
 	<div>
 	<nav id="navbar">
 		<ul>
-			<li><a href="{{url_for('home')}}">Home</a></li>
-			<li><a href="https://github.com/luandiego01/Projeto2-Sistema_de_recomendacao_e_classificacao_de_textos">Readme</a></li>
+			<li><a href="https://github.com/luandiego01/Projeto-Reconhecimento_emocoes">Readme</a></li>
 		</ul>
 	</nav>
 		{% block content %}{% endblock %}
