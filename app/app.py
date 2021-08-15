@@ -40,7 +40,7 @@ def frames1():
             img_redi = np.expand_dims(np.expand_dims(cv2.resize(roi_frame, (48, 48)), -1), 0)
             emotion_prediction = modelo_final.predict(img_redi)
             maxindex = int(np.argmax(emotion_prediction))
-            cv2.putText(frame1, dict_emocoes[maxindex], (x+20, y-40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+            cv2.putText(frame1, dict_emocoes[maxindex], (x+20, y-50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
         ret, buffer = cv2.imencode('.jpg', frame1)
         frame = buffer.tobytes()
