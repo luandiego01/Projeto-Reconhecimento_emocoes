@@ -3,15 +3,19 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   body {
-    background: #CCFFFF
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
   }
   .red-text {
     color: red;
+  }
+  img {
+    border-radius:  5%;
   }
   h1 {
     font-family: Lobster, monospace;
     font-size: 30px;
     text-align: center;
+    box-shadow: 5;
   }
   h4 {
     font-family: monospace;
@@ -42,7 +46,7 @@
   	position: fixed;
   	top:  0;
   	width: 100%;
-    background-color: skyblue;
+    background-color: rgba(255,0,0,0);
     padding-top: 2px;
     padding-bottom: 9px;
   }
@@ -63,6 +67,7 @@
   .box-1 {
     text-align: center;
     justify-content: center;
+    border-radius: 5%;
   }
   button {
     border-radius: 5px;
@@ -88,6 +93,7 @@
 		<ul>
 			<li><a href="https://github.com/luandiego01/Projeto-Reconhecimento_emocoes">Readme</a></li>
 		</ul>
+    <hr>
 	</nav>
 		{% block content %}{% endblock %}
 	</div>
