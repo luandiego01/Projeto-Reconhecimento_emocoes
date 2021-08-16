@@ -29,3 +29,16 @@ Além disso, também podemos criar um banco de dados, e o usuário teria a opç�
 Uma outra ideia seria criar também webservice um serviço de criação de avatar, onde o usuário criaria sem avatar e com o detector de emoções, o avatar viraria emojis para o usuário.
 
 Essas são apenas algumas das muitas ideias e possibilidades que podemos ter com esse projeto e API
+
+## Performance do modelos.
+
+Para esse trabalho, criamos quatro redes neurais, todos os modelos foram salvos, as métrica deles foram:
+
+- Primeiro modelo: Acurácia em treino: 70%, acurácia em teste: 43%
+- Segundo modelo: Acurácia em treino: 84%, acurácia em teste: 54%
+- Terceiro modelo: Acurácia em treino: 77%, acurácia em teste: 56%
+- Quarto modelo: Acurácia em treino: 74%, acurácia em teste: 53%
+
+Dos quatro modelos, escolhemos o terceiro, pois este teve uma melhor acurácia em dados de teste, com uma diferença menor em relação aos dados de treino.
+
+Apenas de teoricamente os valores não estarem tão altos, temos que lembrar que estamos com sete categorias, e de maneira aleatória teríamos por volta de 14% de acurácia, portanto temos um ótimo resultado.
