@@ -20,15 +20,19 @@ Além do notebook, temos um API pronto para ser testado localmente, executado-o,
 
 Também temos a biblioteca1.py que ta com a  classe de processamento de imagens e duas funções de predição salvas, que podem nos ajudar em futuros projetos.
 
-## Ideias para continuidade.
+## Ideias para aplicações.
 
 A primeira ideia para usarmos esse projeto, é em contato com uma equipe de desenvolvedores, colocar o API em um webservice para usuários testarem diretamente por um site.
 
+Uma outra ideia seria criar também webservice um serviço de criação de avatar, onde o usuário criaria seu avatar e com o detector de emoções, o avatar viraria emojis para o usuário.
+
 Além disso, também podemos criar um banco de dados, e o usuário teria a opção de abastecer esse banco de dados enviando uma foto com uma das emoções escolhidas, assim, no podemos depois retreinar o modelo, afim de obter uma melhor acurácia.
 
-Uma outra ideia seria criar também webservice um serviço de criação de avatar, onde o usuário criaria sem avatar e com o detector de emoções, o avatar viraria emojis para o usuário.
+Outra ideia possível é levar o projeto em outro nível, trabalhar do zero com os dados de treino, pegando não as imagens dos rostos, e sim as imagens das micro expressões de cada foto, e pensar na possibilidade de treinar as redes neurais com essas micro expressões, para conseguir fazer um estudo mais aprofundado sobre a detecção de expressões e emoções
 
 Essas são apenas algumas das muitas ideias e possibilidades que podemos ter com esse projeto e API
+
+
 
 ## Performance do modelos.
 
